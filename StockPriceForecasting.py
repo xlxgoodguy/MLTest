@@ -19,7 +19,7 @@ X_train,X_test,y_train,y_test=model_selection.train_test_split(X,y,test_size = 0
 regr = linear_model.LinearRegression()
 
 # 用训练集训练模型
-regr.fit(X_test, y_test)
+regr.fit(X_train, y_train)
 
 # 用训练得出的模型进行预测
 diabetes_y_pred = regr.predict(X_test)
